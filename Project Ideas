@@ -1,0 +1,39 @@
+Idea 1
+  Source: http://www.hacking4defensegu.com/dodic-challenges/#dodic-challenges-1
+  
+  Problem: The U.S. Army currently lacks the ability to aggregate, index, 
+  and analyze large amounts of social media data in order to 
+  identify current and future political, social and economic 
+  trends. This valuable source of data could be used in conjunction 
+  with advanced artificial intelligence methods to inference future 
+  social unrest and allow commanders to focus resources more 
+  effectively on probable hotspots in dense urban environments.
+
+Idea 2
+  Source: http://armstrade.sipri.org/armstrade/page/trade_register.php
+  
+  Problem: 
+      Who are the suppliers and recipients of major conventional weapons?
+			What weapons have been exported or imported by specific suppliers or recipients?
+			How have the relationships between different suppliers and recipients changed over time?
+			Where do countries in conflict get their weapons from?
+			How do states implement their export control regulations?
+			Where are potentially destabilizing build ups of weapons occurring?
+      What is the relationship between access to natural resources and arms transfers?
+ 
+Idea 3
+  Source: https://www.kaggle.com/c/kkbox-churn-prediction-challenge
+  
+  Problem: KKBOX is Asia’s leading music streaming service, holding 
+  the world’s most comprehensive Asia-Pop music library with over 
+  30 million tracks. They offer a generous, unlimited version of their 
+  service to millions of people, supported by advertising and paid 
+  subscriptions. This delicate model is dependent on accurately 
+  predicting churn of their paid users.
+
+  In this competition you’re tasked to build an algorithm that predicts 
+  whether a user will churn after their subscription expires. Currently, 
+  the company uses survival analysis techniques to determine the residual 
+  membership life time for each subscriber. By adopting different methods, 
+  KKBOX anticipates they’ll discover new insights to why users leave so 
+  they can be proactive in keeping users dancing.
