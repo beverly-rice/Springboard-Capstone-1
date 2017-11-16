@@ -5,13 +5,29 @@ Springboard Capstone 1 Project Proposal
 Project: WSDM – KKBox’s Churn Prediction Challenge
 Source: Kaggle, https://www.kaggle.com/c/kkbox-churn-prediction-challenge
 
-Background: KKBox is Asia’s leading music streaming service, holding the world’s most comprehensive Asia-Pop music library with over 30 million tracks.  They have expanded to support Windows, Mac OS X, IOS, Android, Symbian, Bada, and Java phones.  Subscribers have praised the service’s relevance of search results, advanced search function, and content search function over similar providers.  To support operations, the company offers freemium and “pay-per-month” subscriptions.    
+Background: KKBox is Asia’s leading music streaming service, holding the 
+world’s most comprehensive Asia-Pop music library with over 30 million 
+tracks.  They have expanded to support Windows, Mac OS X, IOS, Android, 
+Symbian, Bada, and Java phones.  Subscribers have praised the service’s 
+relevance of search results, advanced search function, and content search 
+function over similar providers.  To support operations, the company offers 
+freemium and “pay-per-month” subscriptions.    
 
-Problem: Build an algorithm that accurately predicts whether a paid KKBox user will not renew or purchase a new subscription within 30 days post membership expiration.
+Problem: Build an algorithm that accurately predicts whether a paid KKBox 
+user will not renew or purchase a new subscription within 30 days post 
+membership expiration.
 
-Client: KKBox dominated the market in 2008 with 80% market share and in 2015 announced that they acquired over 10 million cumulative users in the past decade.  They’ve boasted over 1600 registered artists and celebrities and currently compete with Apple iTunes, Spotify, and YouTube. They hope to identify factors that contribute to why users leave so they can be proactive in maintaining their customers. 
+Client: KKBox dominated the market in 2008 with 80% market share and in 
+2015 announced that they acquired over 10 million cumulative users in 
+the past decade.  They’ve boasted over 1600 registered artists and celebrities 
+and currently compete with Apple iTunes, Spotify, and YouTube. They hope to 
+identify factors that contribute to why users leave so they can be proactive 
+in maintaining their customers. 
 
-Data Source: KKBox has donated a dataset roughly 33GB in size to aide in developing a model.  It includes a train set which has user ids and whether they have churned, a transactions file that details payment and subscription selections, user logs describing listening behaviors, and member demographics.   
+Data Source: KKBox has donated a dataset roughly 33GB in size to aide in 
+developing a model.  It includes a train set which has user ids and whether 
+they have churned, a transactions file that details payment and subscription 
+selections, user logs describing listening behaviors, and member demographics.   
 
 Approach:
 1.	Acquire domain knowledge
@@ -27,5 +43,7 @@ Approach:
 Deliverables:
 1.	Milestone Report: Identify at least 2-3 multi-feature data relationships
 2.	Model/Code – Document on github (https://github.com/beverly-rice)
-3.	Final Paper – Include project snapshot, ideas for further research, and up to 3 concrete recommendations for the client on how to use findings
-4.	Slide deck – Capture approach, findings, and way-forward in a powerpoint presentation
+3.	Final Paper – Include project snapshot, ideas for further research, and 
+    up to 3 concrete recommendations for the client on how to use findings
+4.	Slide deck – Capture approach, findings, and way-forward in a powerpoint 
+    presentation
