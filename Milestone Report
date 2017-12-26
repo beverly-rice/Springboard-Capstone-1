@@ -93,15 +93,32 @@ Step 4: Combine Files for Further Analysis
   - Dropped duplicate data
   - Created additional variables
 
-List of changes made to the data
-1.  Removed ‘bd’ variable – ranged from -7000 to +2000 and over 67% 
-    reported an age of ‘0’
-2.  Removed ‘gender’ variable – 65% did not report a gender; analysis 
-    shows that reported males and females churned at a very similar 
-    rate, 17.6% and 16.9% respectively.  
-3.  Removed members who registered before 2010 – KKBox went international 
-    in 2009 and also received investments from at least 2 big-name companies; 
-    there was a significant increase in membership starting in 2010
+Important Findings:
+  The age variable ranged from -7168 to +2016 and over 67% of members
+reported an age of '0' suggesting many users falsified the information.
+After removing the users under the age of 1 and over the age of 100, the
+data reflected the remaining users largely fell between the ages of 15 
+and 55.  This pool of users made up less than 30% of the overall data
+provided and was deemed an inaccurate representation of KKBox's member 
+base as a whole.  The variable was discarded.
+
+  65% of members did not report a specific gender.  Of the remaining 
+members, 17.6% reported male and 16.9% reported female.  Diving into
+churn rates, the sexes differed by less than 1%.  Considering the large
+amount of missing values for this particular variable and the very similar
+churn rate reported by males and females, this variable was discarded.  
+  
+  The number of registered members increased at a rapid rate starting in 2009.  
+During this time period, KKBox went international and expanded their user base
+beyond Taiwan and into Hong Kong and Macau, and later to Japan, Malaysia, 
+Singapore, and Thailand.  Starting in 2011, KKBox also received investments
+from KDDI Corporation and HTC Corporation.  For the purposes of this challenge,
+only users who registered in 2009 and later were considered.
+  
+  Based on the variables provided, new ones were created for each member: registration day,
+registration month, number of payment methods used, number of payment plans
+used, discount, total transactions, 
+
 4.  Added Variable - registration day and month
 5.  Added Boolean – whether member used multiple payment methods
 6.  Added Boolean – whether member used multiple payment plans
@@ -116,7 +133,7 @@ List of changes made to the data
 14. Created master file containing a single entry for each member with 
     variables for further analysis
 
-Important findings
+
 
 See Data Wrangling.ipynb in this repository for wrangling/analysis details
 
