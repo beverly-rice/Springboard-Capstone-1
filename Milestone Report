@@ -55,4 +55,68 @@ the month of February 2017, and the test data is with users whose subscription
 expires within the month of March 2017. This means we are looking at user churn or 
 renewal roughly in the month of March 2017 for train set, and the user churn or 
 renewal roughly in the month of April 2017. 
-  
+
+Data Wrangling Steps Performed
+Step 1: Conduct Initial Explortory Data Analysis
+  - Applied .info() to each file to view entries, columns and types.  
+    Also used .info() and isnull () to determine if there were any 
+    null values
+  - Applied .describe() to each file to get count/mean/std/min/max 
+    25/50/75 for each column
+  - Applied .columns to get just the names of each column
+  - Applied .duplicated() to each file to determine if there were 
+    any duplicate entries
+  - Applied .head() to get initial visual of data
+  - Applied .size and .unique() to ID unique values for each column
+  - Applied .loc() to slice data
+
+Step 2: Conduct Visual Exploratory Analysis
+  - Plotted frequency counts for categorical data
+  - Applied pd.to_datetime() to convert dates to the appropriate format
+  - Plotted frequency counts for time variables
+  - Bucketed data for clearer visuals
+  - Dropped duplicate 'subscriptions/activity' from same member
+  - Plotted single subscription/activity for each member with respect 
+    to each variable 
+  - Identified outliers
+  - Visualized multiple variables
+
+Step 3: Create New Variables
+  - Applied groupby(), sum(), and count() 
+  - Narrowed down dates to month, weekday, and day of month
+  - Logically deduced info from existing variables
+  - Plotted frequency counts for new variables
+
+Step 4: Combine Files for Further Analysis
+  - Applied concat(), merge(), and to_csv() 
+  - Removed dirty/erroneous data
+  - Dropped duplicate data
+  - Created additional variables
+
+List of changes made to the data
+1.  Removed ‘bd’ variable – ranged from -7000 to +2000 and over 67% 
+    reported an age of ‘0’
+2.  Removed ‘gender’ variable – 65% did not report a gender; analysis 
+    shows that reported males and females churned at a very similar 
+    rate, 17.6% and 16.9% respectively.  
+3.  Removed members who registered before 2010 – KKBox went international 
+    in 2009 and also received investments from at least 2 big-name companies; 
+    there was a significant increase in membership starting in 2010
+4.  Added Variable - registration day and month
+5.  Added Boolean – whether member used multiple payment methods
+6.  Added Boolean – whether member used multiple payment plans
+7.  Added Boolean – whether member received a discount
+8.  Added Variable – total subscriptions per member
+9.  Added Variable – total membership time
+10. Added Variable – total days used
+11. Added Variable – total songs listened to throughout membership
+12. Added Variable – total songs listened to more than once
+13. Added Variables – percentage of songs listened to for only 25%, 50%, 75%, 
+    98.5% and 100% of the song length throughout membership
+14. Created master file containing a single entry for each member with 
+    variables for further analysis
+
+Important findings
+
+See Data Wrangling.ipynb in this repository for wrangling/analysis details
+
