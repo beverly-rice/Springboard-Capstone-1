@@ -44,4 +44,15 @@ Data: KKBox provided 5 files in the challenge:
   
   5. sample_submission_v2: the test set, containing the user IDs in the format 
   KKBox expects it to be submitted in - it incnludes the user ID and churn prediction
+
+The dependent variable is whether a user will churn after their subscription expires.
+Specifically, KKBox wants to see if a user will/will not purchase a new service subscription 
+within 30 days of their current membership expiration date.  
+
+The train and the test data are selected from users whose membership expire within 
+a certain month. The train data consists of users whose subscription expires within 
+the month of February 2017, and the test data is with users whose subscription 
+expires within the month of March 2017. This means we are looking at user churn or 
+renewal roughly in the month of March 2017 for train set, and the user churn or 
+renewal roughly in the month of April 2017. 
   
