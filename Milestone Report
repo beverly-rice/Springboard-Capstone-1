@@ -1,0 +1,47 @@
+Beverly Rice
+Springboard Capstone 1 Milestone Report
+26 Dec 2017
+
+Project: WSDM – KKBox’s Churn Prediction Challenge
+Source: Kaggle, https://www.kaggle.com/c/kkbox-churn-prediction-challenge
+
+Background: KKBox is Asia’s leading music streaming service, holding the 
+world’s most comprehensive Asia-Pop music library with over 30 million 
+tracks.  They have expanded to support Windows, Mac OS X, IOS, Android, 
+Symbian, Bada, and Java phones.  Subscribers have praised the service’s 
+relevance of search results, advanced search function, and content search 
+function over similar providers.  To support operations, the company offers 
+freemium and “pay-per-month” subscriptions.    
+
+Problem: Build an algorithm that accurately predicts whether a paid KKBox 
+user will not renew or purchase a new subscription within 30 days post 
+membership expiration.
+
+Client: KKBox dominated the market in 2008 with 80% market share and in 
+2015 announced that they acquired over 10 million cumulative users in 
+the past decade.  They’ve boasted over 1600 registered artists and celebrities 
+and currently compete with Apple iTunes, Spotify, and YouTube. They hope to 
+identify factors that contribute to why users leave so they can be proactive 
+in maintaining their customers. 
+
+Data: KKBox provided 5 files in the challenge: 
+  1. train_v2: the train set containing user IDs and whether they have churned
+  
+  2. members_v3: select user information to include member ID, city, age, 
+  gender, registration method, and registration initialization time
+  
+  3. transactions_v2: transactions of users until March 31, 2017 - includes
+  user ID, payment method, payment plan, plan price, amount paid, whether
+  the member opted to auto-renew or auto-cancel their subscription, 
+  transaction date, and membership expiration date
+  
+  4. user_logs_v2: daily user logs describing listening behaviors of select 
+  users - includes user ID, date of log, the number of songs played less 
+  than 25% of the song length, between 25-50% of the song length, between 50-75%
+  of the song length, between 75-98.5% of the song length, and over 98.5% of the
+  song length.  It also includes the number of unique songs and the total seconds 
+  played for the given log entry
+  
+  5. sample_submission_v2: the test set, containing the user IDs in the format 
+  KKBox expects it to be submitted in - it incnludes the user ID and churn prediction
+  
