@@ -104,7 +104,7 @@ base as a whole.  The variable was discarded.
 
   65% of members did not report a specific gender.  Of the remaining 
 members, 17.6% reported male and 16.9% reported female.  Diving into
-churn rates, the sexes differed by less than 1%.  Considering the large
+churn rates, the sexes differed by less than 0.1%.  Considering the large
 amount of missing values for this particular variable and the very similar
 churn rate reported by males and females, this variable was discarded.  
   
@@ -139,8 +139,47 @@ listened to most of their songs at less than 25% of the length possibly indicati
 search/recommendation engine performance per the user's preferences.  Unfortunately, the data 
 did not produce an observable trend in p25/50/75/985/100 value among the users.
 
-  Based on the above analysis the variables likely to be included in the final model are:
-    
+Based on the above analysis the variables likely to be included in the final model are:
+msno                      
+is_churn                 
+city
+registered_via    
+registration_init_time    
+reg_mth                 
+reg_day                 
+payment_method_id        
+payment_plan_days        
+plan_list_price           
+actual_amount_paid      
+is_auto_renew             
+transaction_date          
+membership_expire_date    
+is_cancel                
+trans_mth                 
+trans_day                 
+exp_mth                 
+exp_day             
+trans_count          
+discount              
+methods_used             
+plans_used             
+mbr_time                
+date                     
+total_secs_x            
+days_used               
+total_day              
+fav_songs            
+sum_25                   
+sum_50             
+sum_75                  
+sum_985                 
+sum_100             
+sum_songs              
+p25                  
+p50                   
+p75                     
+p985                    
+p100                   
 
 See Data Wrangling.ipynb in this repository for wrangling/analysis details
 
