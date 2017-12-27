@@ -117,23 +117,30 @@ only users who registered in 2009 and later were considered.
   
   Based on the variables provided, new ones were created for each member: registration day,
 registration month, number of payment methods used, number of payment plans
-used, discount, total transactions, 
+used, discount, total transactions, total membership duration, number of active
+logs, total songs listened to throughout membership, total songs listened to more 
+than once, total songs listened to for 25/50/75/985/100% of the song duration, and 
+percentage of songs listened to for only 25/50/75/98.5/100% of the song length.
 
-4.  Added Variable - registration day and month
-5.  Added Boolean – whether member used multiple payment methods
-6.  Added Boolean – whether member used multiple payment plans
-7.  Added Boolean – whether member received a discount
-8.  Added Variable – total subscriptions per member
-9.  Added Variable – total membership time
-10. Added Variable – total days used
-11. Added Variable – total songs listened to throughout membership
-12. Added Variable – total songs listened to more than once
-13. Added Variables – percentage of songs listened to for only 25%, 50%, 75%, 
-    98.5% and 100% of the song length throughout membership
-14. Created master file containing a single entry for each member with 
-    variables for further analysis
+  Preliminary EDA highlighted some variables/values that may indicate a higher likelyhood 
+to churn.  Members who registered using methods 3 & 4 were more likely
+to churn than those who used methods 7, 9 & 13.  Those who registered in the beginning of the
+year, particularly in march, were more likely to churn than those who registered in the fall.
+Users who opted for payment methods 3, 6, 8, 12, 7, 1, 15, 20, 22, and 32 churned at a rate 
+of over 90% whereas those who used methods 11, 14, 18, 19, 21, 23, 27, 31, 33, 34, 37, 39 & 40
+churned at a rate less than 5%.  Further, the more payment methods and payment plans used by a 
+member increased their probability of churning.  Users who paid more than $200 for their plan 
+showed high churn rates as well as those who manually cancelled their subscription.  
+  
+  p25/50/75/985/100 are new variables introduced to indicate the percentage of total songs
+throughout a users membership that were listened to for only 25/50/75/98.8/100% of the 
+duration of the song length.  An assumption is that if a member had a high p25 value, they 
+listened to most of their songs at less than 25% of the length possibly indicating poor 
+search/recommendation engine performance per the user's preferences.  Unfortunately, the data 
+did not produce an observable trend in p25/50/75/985/100 value among the users.
 
-
+  Based on the above analysis the variables likely to be included in the final model are:
+    
 
 See Data Wrangling.ipynb in this repository for wrangling/analysis details
 
