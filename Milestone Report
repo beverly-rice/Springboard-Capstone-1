@@ -139,7 +139,7 @@ listened to most of their songs at less than 25% of the length possibly indicati
 search/recommendation engine performance per the user's preferences.  Unfortunately, the data 
 did not produce an observable trend in p25/50/75/985/100 value among the users.
 
-Based on the above analysis the variables likely to be included in the final model are:
+Based on the above analysis the variables likely to be considered for the final model are:
 msno                      
 is_churn                 
 city
